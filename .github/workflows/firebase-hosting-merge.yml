@@ -14,8 +14,6 @@ jobs:
         run: |
         touch .env
         echo REACT_APP_API_KEY =${{ secrets.API_KEY }} >> .env
-        env:
-          REACT_APP_API_KEY: '${{ secrets.API_KEY }}'
       - uses: actions/checkout@v2
       - run: npm install && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
