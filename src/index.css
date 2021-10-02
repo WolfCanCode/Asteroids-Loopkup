@@ -36,26 +36,33 @@ code {
 
 /* overrides antd */
 
-.ant-picker-panel:last-child {
-  width:0;
+
+@media (max-width: 768px) {
+  .ant-picker-header-next-btn, .ant-picker-header-super-next-btn {
+    visibility: initial !important;
+  }
+
+  .ant-picker-panel:last-child {
+    width:0;
+  }
 }
 
 
-.ant-picker-body {
-  display: none;
-}
 
 @media (min-width: 768px) {
   .ant-picker-panel{
     width: 280px!important;
   }
+
   .ant-picker-panel:first-child .ant-picker-header {
-    position: relative !important;
+    position: relative;
   }
+
 
   .ant-picker-header-prev-btn, .ant-picker-header-view {
     visibility: initial;
   }
+
 }
 
 .ant-picker-body {
