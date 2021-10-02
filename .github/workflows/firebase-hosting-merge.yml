@@ -16,7 +16,7 @@ jobs:
           REACT_APP_API_KEY: '${{ secrets.API_KEY }}'
         with:
           filename: .env
-      - run: npm ci && npm run build
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
