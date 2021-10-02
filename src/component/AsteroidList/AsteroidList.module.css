@@ -1,0 +1,23 @@
+.container {
+    width: 100vw;
+    height: auto;
+}
+
+.container .placeHolderLength {
+    text-align: center;
+    color: var(--placeHolderLengthColor);
+    font-weight:500;
+    font-size:14px;
+}
+
+.container > .asteroidListContainer {
+    padding: 10px 45px;
+}
+
+.container > .asteroidListContainer > .dateIndex {
+    padding: 5px 10px;
+    background-color: var(--blue-8);
+    color: white;
+    width: fit-content;
+    border-radius: 15px;
+}

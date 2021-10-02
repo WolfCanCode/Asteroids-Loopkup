@@ -1,0 +1,16 @@
+.container {
+    position:fixed;
+    z-index:2;
+    top:35px;
+    right:35px;
+}
+
+
+.fabContainer.dark {
+    background: var(--gray-8) ;
+    border-color: var(--gray-7);
+}
+
+.fabContainer.dark svg{
+    fill: white;
+}

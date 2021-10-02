@@ -1,0 +1,36 @@
+.container {
+    height:auto;
+    margin-top:150px;
+    display:grid;
+    text-align: center;
+    vertical-align:middle;
+    transition: .2s margin-top ease-out;
+}
+
+.headerTitle {
+    color:var(--text-default) !important;
+    transition: .2s ease-in-out all;
+}
+
+.container .logo {
+    content:" ";
+    height:150px;
+    background-image: url("assets/images/nasaLogo.png");
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition: .2s all ease-out;
+}
+
+.container.haveData {
+    margin-top:0px;
+    transition: .2s margin-top ease-in;
+}
+
+.container.haveData .logo {
+    content:" ";
+    height:100px;
+    background-size: 100px auto;
+    transition: .2s all ease-out;
+
+}

@@ -1,0 +1,11 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-theme);
+    background-image: url('assets/images/dinosaurBg.png');
+    background-position: bottom right;
+    background-size: 350px auto;
+    background-repeat: no-repeat;
+    overflow: hidden auto;
+    transition: background-color 0.2s ease-in-out
+}

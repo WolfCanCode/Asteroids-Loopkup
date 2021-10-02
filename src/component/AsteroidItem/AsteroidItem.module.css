@@ -1,0 +1,12 @@
+.container {
+}
+
+.skeWidth {
+    width: 100vw;
+    padding:25px;
+}
+
+.skeWidth > div  {
+    width: 450px;
+    height:524px;
+}

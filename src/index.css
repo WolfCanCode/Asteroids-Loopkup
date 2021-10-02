@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +13,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --background-theme: #FFFFFF;
+  --card-background-color: #FFFFFF;
+  --text-default: #000000;
+  --placeHolderLengthColor: #7a7a7a;
+
+  /* color */
+  --gray-7:#696969;
+  --gray-8: #242526;
+  --blue-8: #0050b3;
+}
+
+[data-theme="dark"] {
+  --background-theme: #18191A;
+  --card-background-color: var(--gray-8);
+  --text-default: #FFFFFF;
+  --placeHolderLengthColor: #7a7a7a
+}
+
+
+/* overrides antd */
+
+.ant-picker-panel:last-child {
+  width:0;
+}
+
+
+.ant-picker-body {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .ant-picker-panel{
+    width: 280px!important;
+  }
+  .ant-picker-panel:first-child .ant-picker-header {
+    position: relative !important;
+  }
+
+  .ant-picker-header-prev-btn, .ant-picker-header-view {
+    visibility: initial;
+  }
+}
+
+.ant-picker-body {
+  display: block;
+}
+
+.ant-card-bordered {
+  border:1px solid var(--card-background-color);
+}
+
+.ant-card-body {
+  background-color: var(--card-background-color);
+}
+
+.ant-card-meta-title {
+  color: var(--text-default);
+}
+
+.ant-card-meta-description {
+  color: var(--text-default);
+}
+
+.ant-card-hoverable:hover {
+  border: solid 1px #696969;
+}
+
