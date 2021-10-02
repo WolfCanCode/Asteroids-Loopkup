@@ -10,11 +10,17 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
+      - name: Delete .env
+        run: |
+          rm .env
+
       - name: Create env
         run: |
         touch .env
         echo REACT_APP_API_KEY =${{ secrets.API_KEY }} >> .env
-      - uses: actions/checkout@v2
+
       - run: npm install && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
