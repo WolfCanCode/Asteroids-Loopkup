@@ -42,7 +42,7 @@ code {
     visibility: initial !important;
   }
 
-  .ant-picker-panel:last-child {
+  .ant-picker-panel:nth-child(2) {
     width:0;
   }
 }
